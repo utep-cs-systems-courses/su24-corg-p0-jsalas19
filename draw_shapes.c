@@ -1,6 +1,15 @@
 #include <stdio.h>
 #include "draw.h"
 
+
+/* Prints a size x size arrow whose arrowhead starts at the left at leftCol*/
+void print_arrow(int leftCol, int size)
+{
+  print_triangle(leftCol, size);
+  print_square(leftCol+((size/2)+1), size);
+
+}
+
 /* Prints a size x size square whose left col is at startCol */
 void print_square(int leftCol, int size)
 {

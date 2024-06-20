@@ -9,6 +9,6 @@ void print_char_5x7(char c);
 void print_char_11x16(char c);
 
 extern const unsigned char font_5x7[][5];
-extern const unsigned char font_11x16[][16];
+extern const unsigned char font_11x16[95][11];
 
 #endif

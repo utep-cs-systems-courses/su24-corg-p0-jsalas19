@@ -21,10 +21,10 @@ void print_char_11x16(char c)
   for (char col = 0; col < 11; col++){
     for (char row = 0; row < 16; row++){
       unsigned short rowBits = font_11x16[c][col];
-      unsigned short colMask = 1 << (15-row);
-      putchar( (rowBits & colMask) ? '*' : ' ');
+      unsigned short colBits = 1 << (15-row);
+      putchar( (rowBits & colBits) ? '*' : ' ');
     }
     putchar('\n');
   }
-  //putchar('\n');
+  putchar('\n');
 }

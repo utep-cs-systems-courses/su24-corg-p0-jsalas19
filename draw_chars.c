@@ -26,5 +26,5 @@ void print_char_11x16(char c)
     }
     putchar('\n');
   }
-  //putchar('\n');
+  putchar('\n');
 }
